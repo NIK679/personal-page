@@ -80,10 +80,22 @@ h6 {
   border-bottom: 1px solid var(--borderColor);
   overflow: auto;
 }
+.s3 {
+  background-color: var(--secondaryColor);
+  border-bottom: 1px solid var(--borderColor);
+}
 
 .main-container {
   /* width: 100%; */
   margin: 0 auto;
+}
+
+.table-wrapper {
+  padding-bottom: 30px;
+}
+
+.table-container {
+  overflow: auto;
 }
 
 .header-wrapper {
