@@ -6,13 +6,6 @@
 
   --mainText: black;
   --secondaryText: #4b5156;
-
-  --themeDotBorder: #24292e;
-
-  --previewBg: rgb(251, 249, 243, 0.8);
-  --previewShadow: #f0ead6;
-
-  --buttonColor: black;
 }
 
 html,
@@ -89,11 +82,11 @@ h6 {
 }
 
 .main-container {
-  width: 100%;
+  /* width: 100%; */
   margin: 0 auto;
 }
 
-.greeting-wrapper {
+.header-wrapper {
   display: grid;
   text-align: center;
   align-content: center;
@@ -149,7 +142,7 @@ h6 {
   padding-bottom: 10px;
 }
 
-#profile_pic {
+#pic {
   display: block;
   margin: 0 auto;
 
@@ -166,14 +159,6 @@ h6 {
 
   padding-top: 20px;
   padding-bottom: 10px;
-}
-
-#preview-shadow {
-  background-color: var(--previewShadow);
-  max-width: 300px;
-  height: 180px;
-  padding-left: 30px;
-  padding-top: 30px;
 }
 
 #preview {
@@ -204,7 +189,20 @@ h6 {
   margin-bottom: 50px;
 }
 
-@media screen and (max-width: 800px) {
+.table {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  border-top: 1px solid var(--borderColor);
+  border-right: 1px solid var(--borderColor);
+}
+
+.table > span {
+  padding: 8px 4px;
+  border-bottom: 1px solid var(--borderColor);
+  border-left: 1px solid var(--borderColor);
+}
+
+@media screen and (max-width: 400px) {
   .intro-wrapper {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -215,12 +213,5 @@ h6 {
 
   .right-column {
     justify-content: center;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  #preview-shadow {
-    padding-left: 10px;
-    padding-top: 10px;
   }
 }
